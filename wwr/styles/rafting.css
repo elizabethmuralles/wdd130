@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #055a05;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #ffffff;
+}
+
+/* LAYOUT GENERAL */
+header, main, footer {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+/* TIPOGRAFÍA */
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+.socialmedia img {
+    width: 32px;
+    margin-right: 10px;
+}
+
+.linkedin-logo {
+    width: 22px; /* LinkedIn más pequeño */
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* TÍTULO DE LA HERO */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* CAJA AMARILLA */
+.hero-box {
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    right: 40px;
+    background-color: var(--accent2-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #d6b253;
+}
+
+/* TEXTO EN LA CAJA */
+.hero-box p {
+    width: 70%;
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+/* IMAGEN PEQUEÑA EN LA CAJA */
+.hero-side-img {
+    width: 160px;
+    height: auto;
+    border: 3px solid #d6b253;
+}
+
+/* SECCIONES */
+section {
+    margin-top: 40px;
+}
