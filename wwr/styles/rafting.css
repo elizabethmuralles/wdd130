@@ -16,27 +16,23 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: #ffffff;
 }
 
-/* LAYOUT GENERAL */
 header, main, footer {
-    max-width: 940px;
+    max-width: 840px;
     margin: 0 auto;
-    padding: 12px;
+    
 }
 
-/* TIPOGRAFÍA */
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: #fff;
+    text-align: center;
 }
 
-/* NAV */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
 }
 
 nav a {
@@ -45,19 +41,52 @@ nav a {
     font-weight: bold;
 }
 
-.socialmedia img {
-    width: 32px;
-    margin-right: 10px;
+.socialmedia a {
+    text-decoration: none;
 }
 
 .linkedin-logo {
-    width: 22px; /* LinkedIn más pequeño */
+    width: 17px;
 }
 
-/* HERO SECTION */
 .hero {
     position: relative;
     width: 100%;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+section h2{
+    background-color: var(--accent1-color);
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    margin-top: 40px;
+}
+ /*
+.socialmedia img {
+    width: 32px;
+    margin-right: 10px;
 }
 
 .hero-bg {
@@ -66,7 +95,7 @@ nav a {
     display: block;
 }
 
-/* TÍTULO DE LA HERO */
+/* TÍTULO DE LA HERO 
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -79,7 +108,7 @@ nav a {
     background: rgba(0, 0, 0, 0.45);
 }
 
-/* CAJA AMARILLA */
+/* CAJA AMARILLA 
 .hero-box {
     position: absolute;
     top: 150px;
@@ -93,7 +122,7 @@ nav a {
     border: 3px solid #d6b253;
 }
 
-/* TEXTO EN LA CAJA */
+/* TEXTO EN LA CAJA 
 .hero-box p {
     width: 70%;
     color: #000;
@@ -101,14 +130,14 @@ nav a {
     line-height: 1.4rem;
 }
 
-/* IMAGEN PEQUEÑA EN LA CAJA */
+/* IMAGEN PEQUEÑA EN LA CAJA 
 .hero-side-img {
     width: 160px;
     height: auto;
     border: 3px solid #d6b253;
 }
 
-/* SECCIONES */
+/* SECCIONES 
 section {
     margin-top: 40px;
 }
