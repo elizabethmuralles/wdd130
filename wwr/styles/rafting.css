@@ -54,27 +54,25 @@ nav a {
     width: 100%;
 }
 
-.hero article{
+.hero article {
     position: absolute;
-    top: 335px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--accent1-color);
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: rgba(38, 70, 83, 0.8);
     color: #fff;
-    opacity: 0.7;
+    padding: 16px;
+    border-radius: 8px;
 }
 
 .hero article img {
+    width: 120px;
     float: right;
-    width: 125px;
+    margin-left: 12px;
+    border-radius: 6px;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
 
 h1 {
     position: absolute;
@@ -95,3 +93,16 @@ section h2{
     padding: 12px;
     margin-top: 40px;
 }
+
+.hero h1 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(38, 70, 83, 0.7); /* var(--accent1-color) con transparencia */
+    padding: 16px 24px;
+    color: #fff;
+    width: auto;
+    border-radius: 8px;
+}
+
