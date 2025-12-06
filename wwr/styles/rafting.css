@@ -159,21 +159,11 @@ section h2 {
 }
 
 /* ----------- FOOTER ----------- */
-footer nav ul {
+footer .socialmedia {
     display: flex;
-    justify-content: center;
-    gap: 25px;
-    list-style: none;
-    margin: 20px 0;
-    padding: 0;
+    justify-content: flex-end;
+    gap: 20px;
 }
-
-footer nav a {
-    text-decoration: none;
-    color: var(--accent1-color);
-    font-weight: bold;
-}
-
 
 
 footer img {
