@@ -159,11 +159,12 @@ section h2 {
 }
 
 /* ----------- FOOTER ----------- */
-footer nav {
+footer .socialmedia {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
 }
+
 
 footer img {
     width: 30px;
