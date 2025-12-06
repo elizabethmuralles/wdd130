@@ -159,29 +159,14 @@ section h2 {
 }
 
 /* ----------- FOOTER ----------- */
-footer nav.footer-nav {
+footer nav.socialmedia {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: flex-end;
     gap: 20px;
+    margin-top: 10px;
 }
 
-footer nav.footer-nav ul {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-footer nav.footer-nav a {
-    text-decoration: none;
-    color: var(--accent1-color);
-    font-weight: bold;
-}
-
-footer nav.footer-nav img {
+footer nav.socialmedia a img {
     width: 30px;
 }
 
