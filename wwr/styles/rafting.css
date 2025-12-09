@@ -1,3 +1,6 @@
+/* =========================================================
+   GLOBAL VARIABLES & RESET
+   ========================================================= */
 :root {
     --accent1-color: #264653;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -13,15 +16,19 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: #ffffff;
+    line-height: 1.6;
 }
 
-/* ----------- GLOBAL WIDTH ----------- */
+/* Global width for pages */
 header, main, footer {
     max-width: 840px;
     margin: 0 auto;
 }
 
-/* ----------- HEADER ----------- */
+/* =========================================================
+   HEADER
+   ========================================================= */
 header {
     display: grid;
     grid-template-columns: 120px 1fr;
@@ -29,6 +36,7 @@ header {
     background-color: #d1c4f3;
     padding: 20px;
     border-radius: 8px;
+    margin-top: 20px;
 }
 
 header img {
@@ -48,6 +56,7 @@ nav a {
     font-weight: bold;
     padding: 8px 14px;
     border-radius: 4px;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
@@ -55,7 +64,9 @@ nav a:hover {
     border: 1px solid #aaa;
 }
 
-/* ----------- HERO SECTION ----------- */
+/* =========================================================
+   HERO SECTION (Home / About)
+   ========================================================= */
 .hero {
     position: relative;
     width: 100%;
@@ -64,25 +75,7 @@ nav a:hover {
 .hero img {
     width: 100%;
     display: block;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    background-color: rgba(38, 70, 83, 0.8);
-    color: #fff;
-    padding: 16px;
     border-radius: 8px;
-}
-
-.hero article img {
-    width: 120px;
-    float: right;
-    margin-left: 12px;
-    border-radius: 6px;
 }
 
 .hero h1 {
@@ -95,9 +88,31 @@ nav a:hover {
     color: #fff;
     border-radius: 8px;
     font-family: var(--heading-font);
+    font-size: 2rem;
 }
 
-/* ----------- SECTION TITLES ----------- */
+.hero article {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: rgba(38, 70, 83, 0.85);
+    color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.hero article img {
+    width: 120px;
+    float: right;
+    margin-left: 12px;
+    border-radius: 6px;
+}
+
+/* =========================================================
+   SECTION TITLES
+   ========================================================= */
 section h2 {
     background-color: var(--accent1-color);
     color: #fff;
@@ -108,10 +123,12 @@ section h2 {
     font-family: var(--heading-font);
 }
 
-/* ----------- HISTORY SECTION ----------- */
+/* =========================================================
+   ABOUT PAGE — HISTORY GRID
+   ========================================================= */
 .history {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     max-width: 900px;
     margin: 40px auto;
@@ -127,7 +144,9 @@ section h2 {
     border-radius: 6px;
 }
 
-/* ----------- ADVENTURES SECTION ----------- */
+/* =========================================================
+   ABOUT PAGE — ADVENTURES GALLERY
+   ========================================================= */
 .adventures {
     max-width: 900px;
     margin: 50px auto;
@@ -158,22 +177,142 @@ section h2 {
     font-size: 14px;
 }
 
-/* ----------- FOOTER ----------- */
-footer nav.socialmedia {
+/* =========================================================
+   HOME PAGE — NEWSLETTER
+   ========================================================= */
+.newsletter {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.newsletter form {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.newsletter button {
+    padding: 10px;
+    background-color: var(--accent1-color);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.newsletter button:hover {
+    opacity: 0.8;
+}
+
+/* =========================================================
+   HOME PAGE — GRID INFO SECTION
+   ========================================================= */
+.grid-home {
+    max-width: 900px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.grid-home div {
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 6px;
+    color: var(--accent1-color);
+}
+
+/* =========================================================
+   HOME PAGE — CALL TO ACTION
+   ========================================================= */
+.cta-home {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 700px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: var(--accent1-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button-link:hover {
+    opacity: 0.8;
+}
+
+/* =========================================================
+   TRIPS PAGE — CARDS
+   ========================================================= */
+.trips-cards {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
-    margin-top: 10px;
 }
 
-footer nav.socialmedia a img {
-    width: 30px;
+.card {
+    width: 45%;
+    background: #f3f3f3;
+    border-radius: 6px;
+    padding: 15px;
+    color: var(--accent1-color);
 }
 
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
 
+/* =========================================================
+   TRIPS PAGE — TABLE
+   ========================================================= */
+.trips-table {
+    max-width: 900px;
+    margin: 50px auto;
+}
 
-/* Contact Page */
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
+.trips-table th,
+.trips-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.trips-table th {
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+/* =========================================================
+   TRIPS PAGE — CTA
+   ========================================================= */
+.cta-trips {
+    text-align: center;
+    margin: 40px auto;
+}
+
+/* =========================================================
+   CONTACT PAGE — MAP + EMPLOYEES + FORM
+   ========================================================= */
 .company-info iframe {
     width: 100%;
     height: 300px;
@@ -222,4 +361,24 @@ footer nav.socialmedia a img {
 
 .contact-form button:hover {
     opacity: 0.8;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+footer nav.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+footer nav.socialmedia a img {
+    width: 30px;
 }
