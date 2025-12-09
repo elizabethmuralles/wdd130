@@ -1,6 +1,3 @@
-/* =========================================================
-   GLOBAL VARIABLES & RESET
-   ========================================================= */
 :root {
     --accent1-color: #264653;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -20,15 +17,11 @@ body {
     line-height: 1.6;
 }
 
-/* Global width for pages */
 header, main, footer {
     max-width: 840px;
     margin: 0 auto;
 }
 
-/* =========================================================
-   HEADER
-   ========================================================= */
 header {
     display: grid;
     grid-template-columns: 120px 1fr;
@@ -64,9 +57,7 @@ nav a:hover {
     border: 1px solid #aaa;
 }
 
-/* =========================================================
-   HERO SECTION (Home / About)
-   ========================================================= */
+
 .hero {
     position: relative;
     width: 100%;
@@ -110,9 +101,7 @@ nav a:hover {
     border-radius: 6px;
 }
 
-/* =========================================================
-   SECTION TITLES
-   ========================================================= */
+
 section h2 {
     background-color: var(--accent1-color);
     color: #fff;
@@ -123,9 +112,7 @@ section h2 {
     font-family: var(--heading-font);
 }
 
-/* =========================================================
-   ABOUT PAGE — HISTORY GRID
-   ========================================================= */
+
 .history {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -144,9 +131,7 @@ section h2 {
     border-radius: 6px;
 }
 
-/* =========================================================
-   ABOUT PAGE — ADVENTURES GALLERY
-   ========================================================= */
+
 .adventures {
     max-width: 900px;
     margin: 50px auto;
@@ -177,9 +162,7 @@ section h2 {
     font-size: 14px;
 }
 
-/* =========================================================
-   HOME PAGE — NEWSLETTER
-   ========================================================= */
+
 .newsletter {
     max-width: 600px;
     margin: 50px auto;
@@ -206,9 +189,6 @@ section h2 {
     opacity: 0.8;
 }
 
-/* =========================================================
-   HOME PAGE — GRID INFO SECTION
-   ========================================================= */
 .grid-home {
     max-width: 900px;
     margin: 40px auto;
@@ -224,9 +204,7 @@ section h2 {
     color: var(--accent1-color);
 }
 
-/* =========================================================
-   HOME PAGE — CALL TO ACTION
-   ========================================================= */
+
 .cta-home {
     text-align: center;
     margin: 40px auto;
@@ -247,9 +225,6 @@ section h2 {
     opacity: 0.8;
 }
 
-/* =========================================================
-   TRIPS PAGE — CARDS
-   ========================================================= */
 .trips-cards {
     max-width: 900px;
     margin: 50px auto;
@@ -277,9 +252,7 @@ section h2 {
     border-radius: 6px;
 }
 
-/* =========================================================
-   TRIPS PAGE — TABLE
-   ========================================================= */
+
 .trips-table {
     max-width: 900px;
     margin: 50px auto;
@@ -302,17 +275,13 @@ section h2 {
     color: white;
 }
 
-/* =========================================================
-   TRIPS PAGE — CTA
-   ========================================================= */
+
 .cta-trips {
     text-align: center;
     margin: 40px auto;
 }
 
-/* =========================================================
-   CONTACT PAGE — MAP + EMPLOYEES + FORM
-   ========================================================= */
+
 .company-info iframe {
     width: 100%;
     height: 300px;
@@ -363,9 +332,6 @@ section h2 {
     opacity: 0.8;
 }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
 footer {
     margin-top: 40px;
     text-align: center;
